@@ -1,0 +1,14 @@
+django-crispy-forms
+django-braces
+django-dbbackup
+django-extensions
+django-gevent-deploy
+django-vanilla-views
+fabric
+gevent
+psycopg2
+six
+south
+Werkzeug
+-e git+http://github.com/miki725/django-auxilium@develop#egg=django_auxilium
+-e git+http://github.com/miki725/django-pipeline@master#egg=django_pipeline
