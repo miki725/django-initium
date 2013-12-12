@@ -70,6 +70,9 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.Loader',
 )
 
+DBBACKUP_STORAGE = 'dbbackup.storage.filesystem_storage'
+DBBACKUP_FILESYSTEM_DIRECTORY = os.path.join(PROJECT_PATH, PROJECT_NAME, 'backup', 'db')
+
 # URLs
 ROOT_URLCONF = '{{ project_name }}.urls'
 LOGIN_URL = '/login/'
@@ -96,6 +99,15 @@ PIPELINE_CSS = {
             'account/less/login.less',
         ],
         'output_filename': 'account/css/login.css',
+        'extra_context': {
+            'media': 'screen',
+        },
+    },
+    'errors': {
+        'source_filenames': [
+            'errors/less/errors.less',
+        ],
+        'output_filename': 'errors/css/errors.css',
         'extra_context': {
             'media': 'screen',
         },
