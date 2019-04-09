@@ -1,0 +1,12 @@
+{
+	"full_name": "Miroslav Shubernetskiy",
+	"email": "miroslav@miki725.com",
+	"github_username": "miki725",
+	"project_name": "<Project Full Name - can contain UPPERCASE, whitespace>",
+	"python_name": "<python_project_name - must be valid Python package name>",
+	"repo_name": "<repo-name - name as it will be called on GitHub for example>",
+	"project_short_description": "<package description>",
+	"release_date": "2016-01-11",
+	"year": "2016",
+	"version": "0.1.0"
+}

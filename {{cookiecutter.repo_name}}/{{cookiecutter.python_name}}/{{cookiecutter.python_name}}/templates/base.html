@@ -1,0 +1,48 @@
+{% raw %}{% load pipeline %}
+{% load static %}
+
+<!DOCTYPE html>
+<html {% block ngapp %}{% endblock %}>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{% static 'graphics/favicon.png' %}"/>
+    <!-- Bootstrap -->
+    {% block pre_head_styles %}
+        {% stylesheet 'bootstrap' %}
+    {% endblock pre_head_styles %}
+    {% block head_styles %}
+    {% endblock head_styles %}
+
+    {% block head_ie_scripts %}
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            {% javascript 'ie' %}
+        <![endif]-->
+    {% endblock head_ie_scripts %}
+    {% block pre_head_scripts %}
+    {% endblock pre_head_scripts %}
+    {% block head_scripts %}
+    {% endblock %}
+</head>
+<body>
+
+{% block pre_container %}
+{% endblock pre_container %}
+{% block container_wrapper %}
+    <div class="container">
+        {% block container %}
+        {% endblock container %}
+    </div>
+{% endblock container_wrapper %}
+{% block post_container %}
+{% endblock post_container %}
+
+{% block pre_footer_scripts %}
+    {% javascript 'bootstrap' %}
+{% endblock pre_footer_scripts %}
+{% block footer_scripts %}
+{% endblock footer_scripts %}
+
+</body>
+</html>{% endraw %}

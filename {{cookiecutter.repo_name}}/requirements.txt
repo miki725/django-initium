@@ -1,0 +1,17 @@
+django
+django-auxilium
+django-braces
+django-configurations
+django-crispy-forms
+django-pipeline
+django-vanilla-views
+gunicorn
+newrelic
+opbeat
+psycopg2
+six
+
+# required for pipeline to work with Django1.9
+jinja2
+
+https://github.com/miki725/breach_buster/archive/master.tar.gz
